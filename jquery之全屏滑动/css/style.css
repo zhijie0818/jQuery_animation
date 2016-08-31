@@ -1,0 +1,149 @@
+body{font-family:microsoft yahei;}
+/*	.haidao{ width:573px; height:248px; position:absolute; bottom:20px; left:50%; margin-left:-286px; z-index:0;}*/
+ul,li{ list-style:none}
+ul{ padding-left:0px;}
+html, body {
+        position: relative;
+        height: 100%;
+    }
+ body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+.swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+.swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+.page1{background: url(../images/3.jpg) }
+/*****************************wave*****************************/
+.wave{ height:88px; width:200%; left:0;   z-index:3;position:absolute}
+.wave span{ display:block; width:88px; height:88px; border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%; float:left; margin-left:-20px;}
+.wave1{bottom:0px;-webkit-animation:hailang 10s linear infinite;-moz-animation:hailang 10s linear infinite;-ms-animation:hailang 10s linear infinite; z-index:1}
+.wave1 span{
+        FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#1881ca,endColorStr=#0ac5fe); /*IE 6 7 8*/ 
+        background: -ms-linear-gradient(top, #1881ca,  #0ac5fe);        /* IE 10 */
+        background:-moz-linear-gradient(top,#b8c4cb,#0ac5fe);/*鐏嫄*/ 
+        background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#1881ca), to(#0ac5fe));/*璋锋瓕*/ 
+        background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1881ca), to(#0ac5fe));      /* Safari 4-5, Chrome 1-9*/
+        background: -webkit-linear-gradient(top, #1881ca, #0ac5fe);   /*Safari5.1 Chrome 10+*/
+        background: -o-linear-gradient(top, #1881ca, #0ac5fe);  /*Opera 11.10+*/}
+.wave2 span{ background:#1592d6}    
+.wave2 {bottom:-30px;-webkit-animation:hailang2 10s linear infinite;-moz-animation:hailang2 10s linear infinite;-ms-animation:hailang2 10s linear infinite; z-index:3}
+    @-webkit-keyframes hailang{
+    0%{-webkit-transform:translate(0%,0px); opacity:1;}
+    100%{-webkit-transform:translate(-20%,0px); opacity:1; }
+    }
+    @-moz-keyframes hailang{
+    0%{-moz-transform:translate(0%,0px); opacity:1;}
+    100%{-moz-transform:translate(-20%,0px); opacity:1; }
+    }
+    @-ms-keyframes hailang{
+    0%{-ms-transform:translate(0%,0px); opacity:1;}
+    100%{-ms-transform:translate(-20%,0px); opacity:1; }
+    }
+    @-webkit-keyframes hailang2{
+    0%{-webkit-transform:translate(-20%,0px); opacity:1;}
+    100%{-webkit-transform:translate(0%,0px); opacity:1; }
+    }
+    @-moz-keyframes hailang2{
+    0%{-moz-transform:translate(-20%,0px); opacity:1;}
+    100%{-moz-transform:translate(0%,0px); opacity:1; }
+    }
+    @-ms-keyframes hailang2{
+    0%{-ms-transform:translate(-20%,0px); opacity:1;}
+    100%{-ms-transform:translate(0%,0px); opacity:1; }
+    }
+/***************************左进*******************************/
+.swiper-slide-active  .lr{
+    -webkit-animation: lr 1s forwards cubic-bezier(.8,.02,.45,.91);
+	-moz-animation: lr 1s forwards cubic-bezier(.8,.02,.45,.91);
+    -ms-animation: lr 1s forwards cubic-bezier(.8,.02,.45,.91);
+	}
+@-webkit-keyframes lr{
+		0%{opacity:0; transform: translate(-800px,0px);-webkit-transform:translate(-800px,0px)}
+		100%{opacity:1;transform: translate(0px,0px);-webkit-transform:translate(0px,0px)}
+	}
+@-moz-keyframes lr{
+		0%{opacity:0; transform: translate(-800px,0px);-moz-transform:translate(-800px,0px)}
+		100%{opacity:1;transform: translate(0px,0px);-moz-transform:translate(0px,0px)}
+	}
+@-ms-keyframes lr{
+		0%{opacity:0; transform: translate(-800px,0px);-ms--transform:translate(-800px,0px)}
+		100%{opacity:1;transform: translate(0px,0px);-ms--transform:translate(0px,0px)}
+	}
+/***************************右进*******************************/
+.swiper-slide-active  .rl{
+    -webkit-animation: rl 1s forwards cubic-bezier(.8,.02,.45,.91);
+    -moz-animation: rl 1s forwards cubic-bezier(.8,.02,.45,.91);
+    -ms-animation: rl 1s forwards cubic-bezier(.8,.02,.45,.91);
+    }
+@-webkit-keyframes rl{
+        0%{opacity:0; transform: translate(800px,0px);-webkit-transform:translate(800px,0px)}
+        100%{opacity:1;transform: translate(0px,0px);-webkit-transform:translate(0px,0px)}
+    }
+@-moz-keyframes rl{
+        0%{opacity:0; transform: translate(800px,0px);-moz-transform:translate(800px,0px)}
+        100%{opacity:1;transform: translate(0px,0px);-moz-transform:translate(0px,0px)}
+    }
+@-ms-keyframes rl{
+        0%{opacity:0; transform: translate(800px,0px);-ms--transform:translate(800px,0px)}
+        100%{opacity:1;transform: translate(0px,0px);-ms--transform:translate(0px,0px)}
+    }
+/**************************渐入*******************************8*/
+ .swiper-slide-active  .show{
+    -webkit-animation:show 8s;
+    -moz-animation:show 8s;
+    -ms-animation:show 8s;
+ }
+@-webkit-keyframes show{
+        0%{opacity: 0;}
+        50%{opacity: 0.5}
+        100%{opacity: 1}
+    }
+@-moz-keyframes show{
+        0%{opacity: 0;}
+        50%{opacity: 0.5}
+        100%{opacity: 1}
+    }
+@-ms-keyframes show{
+        0%{opacity: 0;}
+        50%{opacity: 0.5}
+        100%{opacity: 1}
+    }
+/********************船*******************************/
+.car {position: absolute;
+    bottom: 60px;
+    -moz-animation:scroll 20s linear infinite;
+    -webkit-animation:scroll 20s linear infinite;
+}
+@-webkit-keyframes scroll{
+    0%{left: -20%;}
+    100%{left: 100%}
+}
+@-moz-keyframes scroll{
+    0%{left: -20%}
+    100%{left: 100%}
+}
