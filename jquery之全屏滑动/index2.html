@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>Document</title>
+<link rel="stylesheet" href="css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="css/style2.css">
+<script type="text/javascript">
+    
+    function sayColor(color){
+        alert(color);
+    }
+    alert(color+"1");
+    alert(typeof window.sayColor);
+</script>
+</head>
+<body>
+ 
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" id="page1"> </div>
+        <div class="swiper-slide" id="page2"> </div>
+        <div class="swiper-slide" id="page3"> </div>
+    </div>
+    <!--右侧按钮-->
+    <div class="swiper-pagination"></div>
+</div>
+
+<!--底部按钮-->
+<div class="swiper-button-next">
+    <div class="netxt-but-arraw">
+        <img src="images/btn-next.png">
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="js/swiper-3.3.1.min.js"></script>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        direction: 'vertical',
+        // 如果需要前进后退按钮
+        nextButton: '.swiper-button-next',
+        keyboardControl : true,
+        mousewheelControl : true,
+        direction:'vertical',
+        mousewheelForceToAxis : true,
+        autoplay:3000
+    });
+</script>
+</body>
+</html>

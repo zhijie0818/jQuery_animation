@@ -1,0 +1,42 @@
+html,body{position:relative;height:100%;}
+body{margin:0;padding:0;}
+.swiper-container{width:100%;height:100%;}
+.swiper-wrapper{ width:100%;height:100%;}
+#page1{ background-image:url(../images/1.jpg); background-size:cover;}
+#page2{ background-image:url(../images/2.jpg);  background-size:cover;}
+#page3{ background-image:url(../images/3.jpg);  background-size:cover;}
+.swiper-button-next{ 
+	width: 32px;
+	height: 47px;
+	position: fixed;
+	top: 98%;
+	left: 48%;
+	z-index: 500;
+	background-image: none!important;
+	 }
+.netxt-but-arraw{
+	width: 200px;
+	height: 14px;
+	margin:0 auto;
+	animation: up-fade 1s ease 0s infinite;
+	-moz-animation:up-fade 1s ease 0s infinite;
+	-webkit-animation:up-fade 1s ease 0s infinite;
+	-ms-animation:up-fade 1s ease 0s infinite;
+	-o-animation:up-fade 1s ease 0s infinite;
+}
+@-webkit-keyframes up-fade{
+	0%{opacity: 1}
+	100%{-webkit-transform:translate3d(0px,-6px,0);opacity: 0.6}
+}
+@-ms-keyframes up-fade{
+	0%{opacity: 1}
+	100%{-webkit-transform:translate3d(0px,-6px,0);opacity: 0.6}
+}
+@-o-keyframes up-fade{
+	0%{opacity: 1}
+	100%{-webkit-transform:translate3d(0px,-6px,0);opacity: 0.6}
+}
+@-moz-keyframes up-fade{
+	0%{opacity: 1}
+	100%{-webkit-transform:translate3d(0px,-6px,0);opacity: 0.6}
+}

@@ -3,6 +3,7 @@ body{font-family:microsoft yahei;}
 ul,li{ list-style:none}
 ul{ padding-left:0px;}
 html, body {
+    background: red;
         position: relative;
         height: 100%;
     }
@@ -21,6 +22,7 @@ html, body {
         margin-right: auto;
     }
 .swiper-slide {
+        height: 100%;
         text-align: center;
         font-size: 18px;
         /* Center slide text vertically */
@@ -37,7 +39,6 @@ html, body {
         -webkit-align-items: center;
         align-items: center;
     }
-.page1{background: url(../images/3.jpg) }
 /*****************************wave*****************************/
 .wave{ height:88px; width:200%; left:0;   z-index:3;position:absolute}
 .wave span{ display:block; width:88px; height:88px; border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%; float:left; margin-left:-20px;}
@@ -76,6 +77,7 @@ html, body {
     0%{-ms-transform:translate(-20%,0px); opacity:1;}
     100%{-ms-transform:translate(0%,0px); opacity:1; }
     }
+
 /***************************左进*******************************/
 .swiper-slide-active  .lr{
     -webkit-animation: lr 1s forwards cubic-bezier(.8,.02,.45,.91);
@@ -94,6 +96,7 @@ html, body {
 		0%{opacity:0; transform: translate(-800px,0px);-ms--transform:translate(-800px,0px)}
 		100%{opacity:1;transform: translate(0px,0px);-ms--transform:translate(0px,0px)}
 	}
+
 /***************************右进*******************************/
 .swiper-slide-active  .rl{
     -webkit-animation: rl 1s forwards cubic-bezier(.8,.02,.45,.91);
@@ -112,6 +115,7 @@ html, body {
         0%{opacity:0; transform: translate(800px,0px);-ms--transform:translate(800px,0px)}
         100%{opacity:1;transform: translate(0px,0px);-ms--transform:translate(0px,0px)}
     }
+
 /**************************渐入*******************************8*/
  .swiper-slide-active  .show{
     -webkit-animation:show 8s;
@@ -133,11 +137,12 @@ html, body {
         50%{opacity: 0.5}
         100%{opacity: 1}
     }
+
 /********************船*******************************/
 .car {position: absolute;
     bottom: 60px;
-    -moz-animation:scroll 20s linear infinite;
-    -webkit-animation:scroll 20s linear infinite;
+    -moz-animation:scroll 8s linear infinite;
+    -webkit-animation:scroll 8s linear infinite;
 }
 @-webkit-keyframes scroll{
     0%{left: -20%;}
